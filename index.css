@@ -4,7 +4,7 @@ body {
 }
 
 .choice-screen-container {
-    height: 900px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
