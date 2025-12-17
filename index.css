@@ -181,7 +181,7 @@ button {
 }
 
 .screen {
-    /* display: none; */
+    display: none;
 }
 
 .flex-players {
