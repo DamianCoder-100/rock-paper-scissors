@@ -80,6 +80,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
+    bottom: 60px;
     width: 230px;
     height: 230px;
 }
