@@ -67,6 +67,7 @@ body {
 .score-text {
     color: hsl(229, 64%, 46%);
     margin: 0px;
+    font-size: 20px;
 
 }
 
@@ -144,7 +145,7 @@ body {
         inset 0 5px 0 hsl(248, 20%, 85%);
 }
 
-button {
+.rules-btn{
     background-color: hsla(237, 48%, 15%, 0);
     font-size: 20px;
     width: 130px;
@@ -152,7 +153,7 @@ button {
     color: aliceblue;
     border-radius: 10px;
     border: 2px solid aliceblue;
-    z-index: 9999;
+    /* z-index: 9999; */
 }
 
 .hidden {
@@ -162,14 +163,14 @@ button {
 
 
 #rulesImage {
-    position: fixed;
+    position: absolute;
     right: 460px;
     top: 315px;
     background-color: black;
     padding: 10px;
     border: 2px solid red;
     pointer-events: none;
-    z-index: 999;
+    /* z-index: 999; */
 }
 
 /* SECTION TWO */

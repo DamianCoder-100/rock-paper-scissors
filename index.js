@@ -96,7 +96,7 @@ console.log("JS is connected")
 
 function updateScore() {
     const scoreEl = document.getElementById("score");
-    scoreEl.textContent = `Score: ${score}`;
+    scoreEl.textContent = ` ${score}`;
 }
 
 const rulesBtn = document.getElementById("rulesBtn");
