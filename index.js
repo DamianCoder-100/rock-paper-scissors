@@ -97,7 +97,9 @@ console.log("JS is connected")
 
 function updateScore() {
     const scoreEl = document.getElementById("score");
+    const scoreNum = document.getElementById("scoreNum");
     scoreEl.textContent = ` ${score}`;
+    scoreNum.textContent = `${score}`
 }
 
 const playAgainBtn = document.querySelector(".play-btn");

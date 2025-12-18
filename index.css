@@ -145,7 +145,7 @@ body {
         inset 0 5px 0 hsl(248, 20%, 85%);
 }
 
-.rules-btn{
+.rules-btn {
     background-color: hsla(237, 48%, 15%, 0);
     font-size: 20px;
     width: 130px;
@@ -181,8 +181,7 @@ body {
 /* SECTION TWO */
 
 .result-container {
-    display: none;
-    height: 800px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,7 +190,8 @@ body {
     margin: 0 auto;
     background: linear-gradient(to bottom, hsla(237, 48%, 15%, 0.903), hsl(214, 47%, 23%));
     margin-top: 20px;
-
+    padding-bottom: 40px;
+    padding-top: 20px;
 }
 
 .header-two {
@@ -204,6 +204,7 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 350px;
+    /* margin-top: -20px; */
 }
 
 .screen {
@@ -245,6 +246,9 @@ body {
     background-color: aliceblue;
     font-size: 18px;
     font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 20px;
     width: 270px;
 }
 
