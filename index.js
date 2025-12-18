@@ -104,5 +104,6 @@ const rulesImage = document.getElementById("rulesImage");
 
 rulesBtn.addEventListener("click", () => {
     console.log("Button log click")
+    alert("Rules clicker")
   rulesImage.classList.toggle("hidden");
 });
