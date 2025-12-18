@@ -169,7 +169,7 @@ body {
     position: fixed;
     right: 50%;
     top: 50%;
-    transform: translate(50%, -20%);
+    transform: translate(50%, -25%);
     background-color: black;
     padding: 10px;
     max-width: 90vw;
