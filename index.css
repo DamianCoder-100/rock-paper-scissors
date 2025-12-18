@@ -174,7 +174,6 @@ body {
     padding: 10px;
     max-width: 90vw;
     max-height: 90vh;
-    border: 2px solid red;
     z-index: 999;
 }
 
