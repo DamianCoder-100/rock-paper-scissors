@@ -156,6 +156,7 @@ button {
 
 .hidden {
     display: none;
+    /* border: 2px solid red; */
 }
 
 
@@ -165,6 +166,9 @@ button {
     top: 315px;
     background-color: black;
     padding: 10px;
+    border: 2px solid red;
+    pointer-events: none;
+    z-index: 999;
 }
 
 /* SECTION TWO */
