@@ -75,6 +75,7 @@ function playGame(userChoice) {
 
     updateScore();
     updateResult(message);
+    toggleScreens();
 
 }
 
@@ -99,6 +100,20 @@ function updateScore() {
     scoreEl.textContent = ` ${score}`;
 }
 
+const playAgainBtn = document.querySelector(".play-btn");
+
+playAgainBtn.addEventListener("click", () => {
+    const screenOne = document.querySelector(".screen-one");
+    const resultScreen = document.querySelector(".result-container");
+
+    resultScreen.style.display = "none";  // hide second screen
+    screenOne.style.display = "flex";     // show first screen
+});
+
+
+
+
+
 const rulesBtn = document.getElementById("rulesBtn");
 const rulesImage = document.getElementById("rulesImage");
 
@@ -107,3 +122,11 @@ rulesBtn.addEventListener("click", () => {
     // alert("Rules clicker")
   rulesImage.classList.toggle("hidden");
 });
+
+function toggleScreens() {
+    const screenOne = document.querySelector(".screen-one");
+    const resultScreen = document.querySelector(".result-container");
+
+    screenOne.style.display = "none";      // hide first screen
+    resultScreen.style.display = "flex";   // show second screen
+}
