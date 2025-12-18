@@ -13,14 +13,14 @@
 <body>
   <section>
     <div class="screen-one choice-screen-container">
-      <div class="sub-container">
-        <div class="header">
-          <img class="logo" src="images\logo.svg" alt="">
-          <div class="score-container">
-            <h3 class="score-text"> Score</h3>
-            <h2 class="number" id="score">0</h2>
-          </div>
+      <div class="header">
+        <img class="logo" src="images\logo.svg" alt="">
+        <div class="score-container">
+          <h3 class="score-text"> Score</h3>
+          <h2 class="number" id="score">0</h2>
         </div>
+      </div>
+      <div class="sub-container">
         <div class="bg-triangle pick-screen">
           <button id="paperBtn" class="paper">
             <img src="./images/icon-paper.svg" alt="paper">
@@ -40,25 +40,26 @@
 
   <section>
     <div class="screen result-container">
-      <div class="header-two">
+      <div class="header">
         <img class="logo" src="images\logo.svg" alt="">
         <div class="score-container">
           <h3 class="score-text"> Score</h3>
           <h2 class="number" id="scoreNum">0</h2>
         </div>
       </div>
-      <div class="flex-players">
-        <div class="choice-container">
-          <div class="choice-circle"></div>
-          <div class="choice-circle"></div>
+      <div class="sub-container">
+        <div class="flex-players">
+          <div class="choice-container">
+            <div class="choice-circle user-choice"></div>
+            <div class="choice-circle house-choice"></div>
+          </div>
+          <div class="text-container">
+            <h4>YOU PICKED</h4>
+            <h4>THE HOUSE PICKED</h4>
+          </div>
         </div>
-        <div class="text-container">
-          <h4>YOU PICKED</h4>
-          <h4>THE HOUSE PICKED</h4>
-        </div>
-
+        <h1 id="resultMessage" class="message"></h1>
       </div>
-      <h1 id="resultMessage" class="message"></h1>
       <button class="play-btn">PLAY AGAIN</button>
       <button id="rulesBtn" class="rules-btn">Rules</button>
       <img id="rulesImage" src="./images/image-rules.svg" alt="Rules" class="hidden">

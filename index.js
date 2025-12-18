@@ -4,7 +4,7 @@ let score = 0;
 const rockBtn = document.getElementById("rockBtn");
 const paperBtn = document.getElementById("paperBtn");
 const scissorsBtn = document.getElementById("scissorsBtn");
-
+const userChoiceCircle  = document.querySelector(".user-choice");
 
 rockBtn.addEventListener("click", () => {
     playGame("rock")
@@ -124,6 +124,26 @@ rulesBtn.addEventListener("click", () => {
     // alert("Rules clicker")
   rulesImage.classList.toggle("hidden");
 });
+
+function handleUserChoice(choice, button){
+    showUserChoice(button);
+    switchToResultScreen();
+}
+
+function showUserChoice(button){
+    userChoiceCircle.innerHTML = button.innerHTML;
+    userChoiceCircle.className = "choice-circle user-choice";
+
+    if (button === rockBtn){
+        userChoiceCircle.classList.add("rock");
+    }
+if(button === paperBtn) {
+    userChoiceCircle.classList.add("paper");
+}
+    if(button === scissorsBtn) {
+        userChoiceCircle.classList.add("scissors");
+    }
+}
 
 function toggleScreens() {
     const screenOne = document.querySelector(".screen-one");
